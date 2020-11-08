@@ -1,0 +1,14 @@
+
+Neos:
+  Imagine:
+    driver: Gmagick
+  Flow:
+    persistence:
+      backendOptions:
+        driver: pdo_mysql
+        dbname: guezel-wolter
+        user: root
+        password: db
+        host: db
+    http:
+      baseUri: 'https://guezel-wolter-installation.de/'

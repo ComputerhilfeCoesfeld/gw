@@ -1,0 +1,13 @@
+@import "variables";
+
+.neos {
+    @import "components/add-redirect-form";
+    @import "components/export-redirects-form";
+    @import "components/filter";
+    @import "components/redirects-table";
+    @import "components/protocol";
+    @import "components/tooltip";
+}
+
+@import "components/notifications";
+

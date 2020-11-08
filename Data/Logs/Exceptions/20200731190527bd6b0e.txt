@@ -1,0 +1,23 @@
+Exception #1334756737 in line 54 of /projects/guezel-wolter/guezel-wolter/Packages/Libraries/neos/cache/Classes/Frontend/StringFrontend.php: The cache file "/projects/guezel-wolter/guezel-wolter/Data/Temporary/Development/Cache/Data/Flow_Aop_RuntimeExpressions/flow_aop_expression_942ce3c9fa850e494fe979c006756e2e" could not be written.
+
+16 Neos\Cache\Backend\SimpleFileBackend::set("flow_aop_expression_942ce3c9fa850e494fe979c006756e2e", "return function(\Neos\Flow\Aop\JoinPointInterface …gument('targetWorkspace'), 'name') === "live");
+};", array|0|, NULL)
+15 Neos\Cache\Frontend\StringFrontend::set("flow_aop_expression_942ce3c9fa850e494fe979c006756e2e", "return function(\Neos\Flow\Aop\JoinPointInterface …gument('targetWorkspace'), 'name') === "live");
+};")
+14 Neos\Flow\Aop\Pointcut\RuntimeExpressionEvaluator::addExpression("942ce3c9fa850e494fe979c006756e2e", "function(\Neos\Flow\Aop\JoinPointInterface $joinPo…rgument('targetWorkspace'), 'name') === "live");
+}")
+13 Neos\Flow\Security\Authorization\Privilege\Method\MethodPrivilegePointcutFilter::matches("Neos\ContentRepository\Domain\Model\Workspace", "publish", "Neos\ContentRepository\Domain\Model\Workspace", 117)
+12 Neos\Flow\Aop\Pointcut\PointcutFilterComposite::matches("Neos\ContentRepository\Domain\Model\Workspace", "publish", "Neos\ContentRepository\Domain\Model\Workspace", 117)
+11 Neos\Flow\Aop\Pointcut\Pointcut::matches("Neos\ContentRepository\Domain\Model\Workspace", "publish", "Neos\ContentRepository\Domain\Model\Workspace", 117)
+10 Neos\Flow\Aop\Builder\ProxyClassBuilder::addAdvicedMethodsToInterceptedMethods(array|1|, array|33|, "Neos\ContentRepository\Domain\Model\Workspace", array|17|)
+9 Neos\Flow\Aop\Builder\ProxyClassBuilder::buildProxyClass("Neos\ContentRepository\Domain\Model\Workspace", array|17|)
+8 Neos\Flow\Aop\Builder\ProxyClassBuilder::build()
+7 Neos\Flow\Command\CoreCommandController::compileCommand(false)
+6 call_user_func_array(array|2|, array|1|)
+5 Neos\Flow\Cli\CommandController::callCommandMethod()
+4 Neos\Flow\Cli\CommandController::processRequest(Neos\Flow\Cli\Request, Neos\Flow\Cli\Response)
+3 Neos\Flow\Cli\Dispatcher::dispatch(Neos\Flow\Cli\Request, Neos\Flow\Cli\Response)
+2 Neos\Flow\Cli\CommandRequestHandler::handleRequest()
+1 Neos\Flow\Core\Bootstrap::run()
+
+

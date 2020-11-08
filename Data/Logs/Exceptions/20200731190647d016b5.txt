@@ -1,0 +1,22 @@
+Exception #1355480641 in line 379 of /projects/guezel-wolter/guezel-wolter/Packages/Framework/Neos.Flow/Classes/Core/Booting/Scripts.php: The cache file "/projects/guezel-wolter/guezel-wolter/Data/Temporary/Development/Cache/Data/Flow_Reflection_Status/Neos_Flow_Mvc_Controller_AbstractController" could not be written.
+
+  Type: Neos\Cache\Exception
+  Code: 1334756737
+  File: Packages/Libraries/neos/cache/Classes/Backend/SimpleFileBackend.php
+  Line: 168
+
+13 Neos\Flow\Core\Booting\Scripts::executeCommand("neos.flow:core:compile", array|16|)
+12 Neos\Flow\Core\Booting\Scripts::initializeProxyClasses(Neos\Flow\Core\Bootstrap)
+11 call_user_func(array|2|, Neos\Flow\Core\Bootstrap)
+10 Neos\Flow\Core\Booting\Step::__invoke(Neos\Flow\Core\Bootstrap)
+9 Neos\Flow\Core\Booting\Sequence::invokeStep(Neos\Flow\Core\Booting\Step, Neos\Flow\Core\Bootstrap)
+8 Neos\Flow\Core\Booting\Sequence::invokeStep(Neos\Flow\Core\Booting\Step, Neos\Flow\Core\Bootstrap)
+7 Neos\Flow\Core\Booting\Sequence::invokeStep(Neos\Flow\Core\Booting\Step, Neos\Flow\Core\Bootstrap)
+6 Neos\Flow\Core\Booting\Sequence::invokeStep(Neos\Flow\Core\Booting\Step, Neos\Flow\Core\Bootstrap)
+5 Neos\Flow\Core\Booting\Sequence::invoke(Neos\Flow\Core\Bootstrap)
+4 Neos\Flow\Cli\CommandRequestHandler::boot("Runtime")
+3 Neos\Flow\Cli\CommandRequestHandler::handleRequest()
+2 Neos\Flow\Core\Bootstrap::run()
+1 require("/projects/guezel-wolter/guezel-wolter/Packages/Framework/Neos.Flow/Scripts/flow.php")
+
+

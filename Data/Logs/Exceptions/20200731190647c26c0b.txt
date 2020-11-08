@@ -1,0 +1,15 @@
+Exception #1334756737 in line 54 of /projects/guezel-wolter/guezel-wolter/Packages/Libraries/neos/cache/Classes/Frontend/StringFrontend.php: The cache file "/projects/guezel-wolter/guezel-wolter/Data/Temporary/Development/Cache/Data/Flow_Reflection_Status/Neos_Flow_Mvc_Controller_AbstractController" could not be written.
+
+11 Neos\Cache\Backend\SimpleFileBackend::set("Neos_Flow_Mvc_Controller_AbstractController", "", array|0|, NULL)
+10 Neos\Cache\Frontend\StringFrontend::set("Neos_Flow_Mvc_Controller_AbstractController", "")
+9 Neos\Flow\Reflection\ReflectionService::updateReflectionData()
+8 Neos\Flow\Reflection\ReflectionService::saveToCache("Compiletime", "Neos\Flow\Core\Bootstrap::bootstrapShuttingDown")
+7 call_user_func_array(array|2|, array|2|)
+6 Neos\Flow\SignalSlot\Dispatcher::dispatch("Neos\Flow\Core\Bootstrap", "bootstrapShuttingDown", array|1|)
+5 Neos\Flow\Core\Bootstrap::emitBootstrapShuttingDown("Compiletime")
+4 Neos\Flow\Core\Bootstrap::shutdown("Compiletime")
+3 Neos\Flow\Cli\CommandRequestHandler::shutdown("Compiletime")
+2 Neos\Flow\Cli\CommandRequestHandler::handleRequest()
+1 Neos\Flow\Core\Bootstrap::run()
+
+
